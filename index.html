@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liquibase Anonymous Analytics Data</title>
+    <link rel="stylesheet" href="oss-dashboard-style.css" />
+    <link rel="stylesheet" href="oss-dashboard-footer-style.css" />
+    <style>
+      /* Main Content Styles */
+      main {
+        flex: 1;
+        padding: 2rem;
+        max-width: 1000px;
+        margin: 0 auto;
+        width: 100%;
+      }
+
+      .home-intro {
+        margin-bottom: 2rem;
+        text-align: center;
+      }
+
+      .chart-preview {
+        margin-bottom: 3.5rem;
+        padding-top: 1rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 2px solid #eee;
+      }
+
+      .chart-preview:last-child {
+        border-bottom: none;
+      }
+
+      .chart-preview p {
+        margin-bottom: 2rem;
+        text-align: left;
+      }
+
+      /* Footer Styles */
+      footer {
+        background-color: #2c3e50;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        margin-top: auto;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        nav ul {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        nav li {
+          margin: 0.5rem 0;
+        }
+      }
+    </style>
+  </head>
+  <body class="background-color-dark-blue">
+    <!-- Header Banner -->
+    <header class="top_banner heading-style-how-it-works text-align-center">
+      <div class="top_banner_flex">
+	      <div class="top_banner_copy">Liquibase Anonymous Analytics Data - Home</div>
+      </div>	
+    </header>
+
+    <!-- Navigation -->
+    <div
+      data-w-id="456f19f9-443d-2df5-1a2f-41ee9a26378e"
+      data-animation="default"
+      data-collapse="medium"
+      data-duration="400"
+      data-easing="ease"
+      data-easing2="ease"
+      role="banner"
+      class="navbar-new w-nav"
+      style="
+        transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg)
+          rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+        transform-style: preserve-3d;
+      "
+    >
+      <div class="navbar-container">
+        <a
+          aria-label="Home page"
+          href="
+          class="navbar_logo w-nav-brand"
+          ><img
+            loading="lazy"
+            src="https://cdn.prod.website-files.com/65c3a844357606c1b08a1e74/65c3a844357606c1b08a1e97_Vector%20(1).svg"
+            alt="Home page" /></a
+        ><link rel="prefetch" href="/" />
+        <nav role="navigation" class="navbar_menu w-nav-menu">
+          <a
+            href="#"
+            class="navbar_link-3 letter-wrap hide w-nav-link"
+            ><span class="letter-wrap__word"
+              <span class="letter-wrap__char">
+                <span class="letter-wrap__char-inner" data-letter="H"> H </span>
+              </span>
+
+              <span class="letter-wrap__char">
+                <span class="letter-wrap__char-inner" data-letter="o"> o </span>
+              </span>
+
+              <span class="letter-wrap__char">
+                <span class="letter-wrap__char-inner" data-letter="m"> m </span>
+              </span>
+
+              <span class="letter-wrap__char">
+                <span class="letter-wrap__char-inner" data-letter="e"> e </span>
+              </span>      
+            </span></a
+          >
+          <a
+            href="http://learn.liquibase.com/"
+            class="navbar_link-3 letter-wrap hide w-nav-link"
+            target="new"
+            ><span class="letter-wrap__word">
+              <span class="letter-wrap__char">
+                <span class="letter-wrap__char-inner" data-letter="L"> L </span>
+              </span>
+
+              <span class="letter-wrap__char">
+                <span class="letter-wrap__char-inner" data-letter="e"> e </span>
+              </span>
+
+              <span class="letter-wrap__char">
+                <span class="letter-wrap__char-inner" data-letter="a"> a </span>
+              </span>
+
+              <span class="letter-wrap__char">
+                <span class="letter-wrap__char-inner" data-letter="r"> r </span>
+              </span>
+
+              <span class="letter-wrap__char">
+                <span class="letter-wrap__char-inner" data-letter="n"> n </span>
+              </span>
+            </span></a
+          >
+          <a
+            href="http://contribute.liquibase.com/"
+            class="navbar_link-3 letter-wrap hide w-nav-link"
+            target="new"
+            ><span class="letter-wrap__word">
+              <span class="letter-wrap__char">
+                <span class="letter-wrap__char-inner" data-letter="C"> C </span>
+              </span>
+
+              <span class="letter-wrap__char">
+                <span class="letter-wrap__char-inner" data-letter="o"> o </span>
+              </span>
+
+              <span class="letter-wrap__char">
+                <span class="letter-wrap__char-inner" data-letter="n"> n </span>
+              </span>
+
+              <span class="letter-wrap__char">
+                <span class="letter-wrap__char-inner" data-letter="t"> t </span>
+              </span>
+
+              <span class="letter-wrap__char">
+                <span class="letter-wrap__char-inner" data-letter="r"> r </span>
+              </span>
+              <span class="letter-wrap__char">
+                <span class="letter-wrap__char-inner" data-letter="i"> i </span>
+              </span>
+              <span class="letter-wrap__char">
+                <span class="letter-wrap__char-inner" data-letter="b"> b </span>
+              </span>
+              <span class="letter-wrap__char">
+                <span class="letter-wrap__char-inner" data-letter="u"> u </span>
+              </span>
+              <span class="letter-wrap__char">
+                <span class="letter-wrap__char-inner" data-letter="t"> t </span>
+              </span>
+              <span class="letter-wrap__char">
+                <span class="letter-wrap__char-inner" data-letter="e"> e </span>
+              </span>
+            </span></a
+          >
+          <a
+            href="https://discord.gg/syPt2bq2"
+            class="navbar_link-3 letter-wrap hide w-nav-link"
+            target="new"
+            ><span class="letter-wrap__word">
+              <span class="letter-wrap__char">
+                <span class="letter-wrap__char-inner" data-letter="C"> C </span>
+              </span>
+
+              <span class="letter-wrap__char">
+                <span class="letter-wrap__char-inner" data-letter="o"> o </span>
+              </span>
+
+              <span class="letter-wrap__char">
+                <span class="letter-wrap__char-inner" data-letter="m"> m </span>
+              </span>
+
+              <span class="letter-wrap__char">
+                <span class="letter-wrap__char-inner" data-letter="m"> m </span>
+              </span>
+
+              <span class="letter-wrap__char">
+                <span class="letter-wrap__char-inner" data-letter="u"> u </span>
+              </span>
+              <span class="letter-wrap__char">
+                <span class="letter-wrap__char-inner" data-letter="n"> n </span>
+              </span>
+              <span class="letter-wrap__char">
+                <span class="letter-wrap__char-inner" data-letter="i"> i </span>
+              </span>
+              <span class="letter-wrap__char">
+                <span class="letter-wrap__char-inner" data-letter="t"> t </span>
+              </span>
+              <span class="letter-wrap__char">
+                <span class="letter-wrap__char-inner" data-letter="y"> y </span>
+              </span>
+            </span></a
+          >
+        </nav>
+        <div
+          class="navbar_burger-btn w-nav-button"
+          style="-webkit-user-select: text"
+          aria-label="menu"
+          role="button"
+          tabindex="0"
+          aria-controls="w-nav-overlay-0"
+          aria-haspopup="menu"
+          aria-expanded="false"
+        >
+          <div class="btn_line top"></div>
+          <div class="btn_line middle"></div>
+          <div class="btn_line bot"></div>
+        </div>
+      </div>
+      <div class="navbar-bg-gradient is-active"></div>
+      <div class="navbar-bg-script w-embed w-script">
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            const navbar = document.querySelector(".navbar-bg-gradient");
+
+            function checkScroll() {
+              // Get current scroll position and viewport width
+              const scrollPosition = window.scrollY;
+              const viewportWidth = window.innerWidth;
+
+              // Set different thresholds based on viewport width
+              const scrollThreshold = viewportWidth <= 450 ? 100 : 250;
+
+              // Toggle class based on threshold
+              if (scrollPosition > scrollThreshold) {
+                navbar.classList.add("is-active");
+              } else {
+                navbar.classList.remove("is-active");
+              }
+            }
+
+            // Run check on both scroll and resize events
+            window.addEventListener("scroll", checkScroll);
+            window.addEventListener("resize", checkScroll);
+
+            // Initial check
+            checkScroll();
+          });
+        </script>
+      </div>
+      <div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div>
+    </div>
+
+    <!-- End of navigation section-->
+
+    <!-- Main Content -->
+    <main>
+      <!-- Introduction Section -->
+      <section class="text-size-regular heading-style-h4">
+        <h2 class="margin-bottom">A collection of monthly data snapshots</h2>
+        <p>
+          Liquibase optionally collects Anonymous Analytics data from OSS and
+          PRO users.<br> Want to see additional slices, open an issue and let’s
+          discuss!
+        </p>
+      </section>
+
+      <!-- Chart Preview Sections -->
+      <section class="chart-preview">
+        <h2 class="heading-style-h5">User and Event Counts</h2>
+
+        <p>
+          Data is not collected everyday or the same number of days per month,
+          and this variation is exhibited in the monthly charts.
+        </p>
+        <a
+          href="pages/user_events.html"
+          class="button display-inlineflex hs-cta-trigger-button w-inline-block"
+          >Users/Events</a
+        >
+      </section>
+
+      <section class="chart-preview">
+        <h2 class="heading-style-h5">Top 15 Commands</h2>
+
+        <p>
+          Liquibase provides more than 50 commands to help manage database
+          schema operations.
+        </p>
+        <a
+          href="pages/commands.html"
+          class="button display-inlineflex hs-cta-trigger-button w-inline-block"
+          >Commands</a
+        >
+      </section>
+
+      <section class="chart-preview">
+        <h2 class="heading-style-h5">Most Popular Changelog Formats</h2>
+
+        <p>
+          Liquibase enables database change creators to work in XML, Formatted
+          SQL, JSON, and YAML to help manage database schema operations.
+        </p>
+        <a
+          href="pages/changelogs.html"
+          class="button display-inlineflex hs-cta-trigger-button w-inline-block"
+          >Changelogs</a
+        >
+      </section>
+
+      <section class="chart-preview">
+        <h2 class="heading-style-h5">Most Popular Databases</h2>
+
+        <p>
+          Liquibase provides database schema change management for over 60
+          different database platforms.
+        </p>
+        <a
+          href="pages/databases.html"
+          class="button display-inlineflex hs-cta-trigger-button w-inline-block"
+          >Databases</a
+        >
+      </section>
+
+      <section class="chart-preview">
+        <h2 class="heading-style-h5">Most Popular Extensions</h2>
+
+        <p>
+          There is a rich ecosystem of free and paid extensions enabling
+          Liquibase to work with all the major and emerging database platforms.
+        </p>
+        <a
+          href="pages/extensions.html"
+          class="button display-inlineflex hs-cta-trigger-button w-inline-block"
+          >Extensions</a
+        >
+      </section>
+
+      <section class="chart-preview">
+        <h2 class="heading-style-h5">Top 15 Liquibase Versions</h2>
+        <p>
+          Liquibase offers and supports multiple versions, enabling users to
+          choose their cadence of upgrades and new capabilities.
+        </p>
+        <a
+          href="pages/versions.html"
+          class="button display-inlineflex hs-cta-trigger-button w-inline-block"
+          >Liquibase Versions</a
+        >
+      </section>
+
+      <section class="chart-preview">
+        <h2 class="heading-style-h5">Most Popular Interfaces</h2>
+
+        <p>
+          Liquibase jobs are triggered in a variety ways in a variety of
+          contexts, from developer laptop to fully-automated pipelines.
+        </p>
+        <a
+          href="pages/interfaces.html"
+          class="button display-inlineflex hs-cta-trigger-button w-inline-block"
+        >
+          Interfaces</a
+        >
+      </section>
+
+      <section class="chart-preview">
+        <h2 class="heading-style-h5">Top 15 Java Versions</h2>
+
+        <p>
+          Liquibase supports multiple versions of Java, from the more than a
+          decade old Java 8 to recent LTS Java 21, enabling users to choose
+          their cadence of upgrades and new capabilities.
+        </p>
+        <a
+          href="pages/javaversions.html"
+          class="button display-inlineflex hs-cta-trigger-button w-inline-block"
+          >Java Versions</a
+        >
+      </section>
+
+      <section class="chart-preview">
+        <h2 class="heading-style-h5">Docker Container usage</h2>
+
+        <p>
+          Liquibase works well with Docker containers, and offers a few
+          variations.
+        </p>
+        <a
+          href="pages/dockercontainers.html"
+          class="button display-inlineflex hs-cta-trigger-button w-inline-block"
+          >Dockers</a
+        >
+      </section>
+
+      <section class="chart-preview">
+        <h2 class="heading-style-h5">CI/CD workflow usage</h2>
+
+        <p>
+          Liquibase is most commonly deployed in automation, and integrates with
+          CI/CD tools. Currently, the analytics only tracks GitHub Actions
+          specifically
+        </p>
+        <a
+          href="pages/cicd.html"
+          class="button display-inlineflex hs-cta-trigger-button w-inline-block"
+          >CI/CD workflows</a
+        >
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-wrap">
+      <!-- Further information -->
+      <div class="md-footer-meta md-typeset">
+        <div class="md-footer-meta__inner md-grid">
+          <div class="footer-form-widget">
+            <div class="widget-inner">
+              <div class="footer-logo">
+                <a href="https://www.liquibase.com">
+                  <img src="images/logo-white.svg" alt=""
+                /></a>
+                <!-- Scarf.sh tracking pixel -->
+                <img
+                  referrerpolicy="no-referrer-when-downgrade"
+                  src="https://static.scarf.sh/a.png?x-pxid=fc4516b5-fc01-40ce-849b-f97dd7be2a34"
+                />
+              </div>
+              <div class="footer-socials">
+                <a
+                  href="https://twitter.com/liquibase"
+                  class="f-twitter"
+                  target="_blank"
+                ></a>
+                <a
+                  href="https://github.com/liquibase/liquibase"
+                  class="f-github"
+                  target="_blank"
+                ></a>
+                <a
+                  href="https://www.reddit.com/r/liquibase/"
+                  class="f-reddit"
+                  target="_blank"
+                ></a>
+                <a
+                  href="https://www.linkedin.com/company/liquibase"
+                  class="f-linkedin"
+                  target="_blank"
+                ></a>
+                <a
+                  href="https://www.youtube.com/channel/UC5qMsRjObu685rTBq0PJX8w"
+                  class="f-youtube"
+                  target="_blank"
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
