@@ -5,3 +5,4 @@ Liquibase optionally collects Anonymous Analytics data from OSS and PRO users, a
 
 
 Want to see additional slices, <a href="https://github.com/liquibase/liquibase-analytics-site/issues" target="newbie">open an Issue</a> and let’s discuss!
+
